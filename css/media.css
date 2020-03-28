@@ -1,0 +1,112 @@
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+    .tabs-header .tabs span{
+        font-size: 15px;
+    }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+    .tabs-header .tabs span{
+        font-size: 14px;
+    }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+    .top-phone, .logo, .top-header h1, .top-header h2{
+        text-align: center;
+    }
+    .logo{
+        margin-bottom: 15px;
+    }
+    .top-phone .tab-item{
+        font-size: 30px;
+    }
+    .tabs-header .tabs span{
+        font-size: 14px;
+    }
+   
+   
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+    .tiz_img, .tiz_descr{
+        display: inline-block;
+        vertical-align: bottom;
+    }
+   
+    .s_tizers .row > div:nth-child(1) i {
+        margin-right: 20px;
+    }
+    .s_tizers .row > div:nth-child(1) span{
+        font-size: 23px;
+    }
+}
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+    
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+      .top-header h1{
+       font-size: 50px;
+       line-height: 50px;
+   }
+   .s_tizers .row{
+    text-align: center;
+}
+    .s_tizers .row > div:nth-child(1) span{
+        font-size: 20px;
+    }
+    .s_tizers .row > div:nth-child(1) strong{
+        font-size: 34px;
+    }
+        
+		
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+   
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+    .s_tizers .row > div:nth-child(1) span{
+        font-size: 16px !important;
+    }
+    .s_tizers .row > div:nth-child(1) strong{
+        font-size: 25px !important;
+    }
+}
+
+ /* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+
+}
+@media (min-height: 720px) and (min-width: 1400){
+    .tabs-header{
+        position: absolute;
+        bottom: 80px;
+    }
+    .tabs-header > div {
+        width: 100%;
+        max-width: 660px
+    }
+    
+	
+}
