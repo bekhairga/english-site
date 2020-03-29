@@ -28,7 +28,9 @@
     .tabs-header .tabs span{
         font-size: 14px;
     }
-   
+    .s_contacts .tabs .tab{
+        padding: 0 20px;
+    }
    
 }
 
@@ -45,6 +47,28 @@
     .s_tizers .row > div:nth-child(1) span{
         font-size: 23px;
     }
+    section h2{
+        font-size: 37px;
+        line-height: 37px;
+    }
+    .top-header h1{
+        font-size: 47px;
+    }
+    .profi_right h3{
+        font-size: 21px;
+    }
+     .profi_right p{
+        font-size: 15px;
+    }
+    .profi_left i {
+    font-size: 60px;
+    line-height: 68px;
+    }
+    .s_review .review_item .image_wrap img{
+        height: 100px;
+        width: 100px;
+    }
+    
 }
 
 /* Custom, iPhone Retina */
@@ -64,7 +88,7 @@
 @media only screen and (min-width : 480px) {
       .top-header h1{
        font-size: 50px;
-       line-height: 50px;
+       line-height: 55px;
    }
    .s_tizers .row{
     text-align: center;
@@ -75,6 +99,8 @@
     .s_tizers .row > div:nth-child(1) strong{
         font-size: 34px;
     }
+   
+
         
 		
 }

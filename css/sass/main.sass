@@ -9,6 +9,7 @@ $green-color: #67bc5c
 *, html,body
 	box-sizing: border-box
 
+
 body
 	font-family: "RobotoRegular", sans-serif
 	font-weight: normal
@@ -18,6 +19,7 @@ body
 	line-height: 1.6
 	color: $text-color
 	-webkit-font-smoothing: antialised
+	overflow-x: hidden
 
 h1
 	color: #ffffff
@@ -27,7 +29,7 @@ h1
 	font-family: "ClearvestingLight", sans-serif
 	margin: 0
 
-section
+section, footer
 	padding: 58px 0 68px
 	&.s_dark
 		h2, h3,p
@@ -70,10 +72,11 @@ header
 	font-size: 40px
 	font-family: "RobotoBold", sans-serif
 	font-weight: bold
-.top-phone 
+.top-phone, .bottom-phone 
 	text-align: right
 	text-transform: uppercase
-	.wrapper tab
+	.wrapper
+		cursor: pointer
 		font-size: 16px
 	.wrapper .active
 		text-decoration: underline
@@ -91,7 +94,7 @@ header
 	display: block
 
 
-.top-header
+.top-header, 
 	margin-top: 70	px
 	h2
 		margin: 10px 0 0
@@ -130,7 +133,7 @@ header
 		padding: 0 
 	li
 		position: relative
-		padding-left: 40px;
+		padding-left: 67px
 		margin-bottom: 10px
 		i
 			position: absolute
@@ -191,7 +194,7 @@ a.button
 	line-height: 48px
 	margin-right: 10px
 	margin-bottom: 25px
-	position: relative;
+	position: relative
 	top: 15px
 
 .s_tizers .row
@@ -294,11 +297,150 @@ form
 	.button-wrap
 		text-align: center
 		margin: 30px 0 10px 0
-		
 .s_review 
 	background-image: url(../img/middle_bg.jpg)
 	background-repeat: repeat-x
 	background-attachment: fixed
-	min-height: 500px
+	min-height: 80vh
 	background-position: center top
 	background-size: cover
+
+	.review_item
+		text-align: center
+		h4
+			font-family: "Times New Roman", serif;
+			font-style: italic
+			font-size: 22px
+			font-weight: normal
+			color: white
+			margin-top: 20px
+			margin-bottom: 20px
+		.image_wrap
+			text-align: center
+			img
+				width: 165px
+				height: 165px
+				display: inline-block
+				border-radius: 50%
+				border: 10px #585A5B solid
+		.review_comment
+			display: inline-block
+			float: none
+			font-size: 15px
+
+	.hr
+		content: ''
+		width: 80px
+		background-color: #cea380
+		height: 1px
+		margin: auto
+		margin-bottom: 10px
+	.owl-nav
+		button
+			width: 34px
+			height: 140px
+			opacity: 0.6
+			transition: all 0.3s ease
+			&:focus
+				outline: none
+			&:hover
+				opacity: 1
+		.owl-prev
+			position: absolute
+			top: 0
+			left: 0
+			background-image: url(../img/arrow-left.png) !important
+		.owl-next
+			position: absolute
+			top: 0
+			right: 0%
+			transform: rotate(-180deg)
+			background-image: url(../img/arrow-left.png) !important
+	.owl-dots
+		width: 100%
+		margin-top: 20px
+		text-align: center
+		.owl-dot
+			width: 14px
+			height: 14px
+			margin: 0 4px
+			background-color: #fff
+			border-radius: 50%
+			display: inline-block
+			opacity: .5
+			&.active
+				opacity: .8
+.s_back
+	background-image: url(../img/red_bg.jpg)
+	background-position: top center
+	text-align: center
+	h3
+		margin-top: 0
+		text-transform: uppercase
+		font-weight: normal
+		font-size: 26px
+		text-align: center
+		background-color: rgba(255,255,255, .13)
+		padding: 10px 0
+	.button
+		color: #000
+.s_contacts
+	.wrapper
+		margin-top: 20px
+		font-size: 18px
+	width: 100%
+	text-align: center
+	.contacts_top
+		text-align: center
+	h2
+		color: #000
+		display: inline-block
+		vertical-align: middle
+		margin-bottom: 0
+		height: 45px
+		line-height: 45px
+	.tabs
+		display: inline-block
+		vertical-align: middle
+		height: 45px
+		line-height: 45px
+		margin-left: 25px
+		.tab
+			float: left
+			color: $red-color
+			border: $red-color 5px solid
+			padding: 0 60px
+			line-height: 38px
+			&:first-child
+				border: 0px 1px 1px 0px
+			&:last-child
+				border: 0px 1px 1px 0px
+			&.active
+				background-color: $red-color
+				color: white
+.map
+	margin-top: 20px
+	min-height: 500px
+	background-color:#e1b6b0
+footer
+	h2
+		margin-bottom: 30px
+	p
+		font-size: 18px
+		text-align: center
+		margin-top: 0
+	.button-wrap
+		text-align: center
+		margin-top: 30px
+.bottom-phone
+	text-align: center
+	color: $red-color
+	margin-top: 50px
+	
+#hidden-forms
+	background-color: white
+	position: relative
+	max-width: 420px
+	margin: auto
+	h2
+		text-align: center

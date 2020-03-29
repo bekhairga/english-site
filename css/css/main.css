@@ -10,7 +10,8 @@ body {
   position: relative;
   line-height: 1.6;
   color: #333;
-  -webkit-font-smoothing: antialised; }
+  -webkit-font-smoothing: antialised;
+  overflow-x: hidden; }
 
 h1 {
   color: #ffffff;
@@ -20,11 +21,11 @@ h1 {
   font-family: "ClearvestingLight", sans-serif;
   margin: 0; }
 
-section {
+section, footer {
   padding: 58px 0 68px; }
-  section.s_dark h2, section.s_dark h3, section.s_dark p {
+  section.s_dark h2, section.s_dark h3, section.s_dark p, footer.s_dark h2, footer.s_dark h3, footer.s_dark p {
     color: #fff; }
-  section h2 {
+  section h2, footer h2 {
     color: #003469;
     line-height: 56px;
     font-size: 50px;
@@ -60,16 +61,17 @@ header {
   font-family: "RobotoBold", sans-serif;
   font-weight: bold; }
 
-.top-phone {
+.top-phone, .bottom-phone {
   text-align: right;
   text-transform: uppercase; }
-  .top-phone .wrapper tab {
+  .top-phone .wrapper, .bottom-phone .wrapper {
+    cursor: pointer;
     font-size: 16px; }
-  .top-phone .wrapper .active {
+  .top-phone .wrapper .active, .bottom-phone .wrapper .active {
     text-decoration: underline;
     cursor: pointer;
     color: red; }
-  .top-phone .tab-item {
+  .top-phone .tab-item, .bottom-phone .tab-item {
     font-size: 35px;
     font-weight: bold; }
 
@@ -122,7 +124,7 @@ header {
     padding: 0; }
   .tabs-header .tab-content li {
     position: relative;
-    padding-left: 40px;
+    padding-left: 67px;
     margin-bottom: 10px; }
     .tabs-header .tab-content li i {
       position: absolute;
@@ -301,6 +303,153 @@ form {
   background-image: url(../img/middle_bg.jpg);
   background-repeat: repeat-x;
   background-attachment: fixed;
-  min-height: 500px;
+  min-height: 80vh;
   background-position: center top;
   background-size: cover; }
+  .s_review .review_item {
+    text-align: center; }
+    .s_review .review_item h4 {
+      font-family: "Times New Roman", serif;
+      font-style: italic;
+      font-size: 22px;
+      font-weight: normal;
+      color: white;
+      margin-top: 20px;
+      margin-bottom: 20px; }
+    .s_review .review_item .image_wrap {
+      text-align: center; }
+      .s_review .review_item .image_wrap img {
+        width: 165px;
+        height: 165px;
+        display: inline-block;
+        border-radius: 50%;
+        border: 10px #585A5B solid; }
+    .s_review .review_item .review_comment {
+      display: inline-block;
+      float: none;
+      font-size: 15px; }
+  .s_review .hr {
+    content: '';
+    width: 80px;
+    background-color: #cea380;
+    height: 1px;
+    margin: auto;
+    margin-bottom: 10px; }
+  .s_review .owl-nav button {
+    width: 34px;
+    height: 140px;
+    opacity: 0.6;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    transition: all 0.3s ease; }
+    .s_review .owl-nav button:focus {
+      outline: none; }
+    .s_review .owl-nav button:hover {
+      opacity: 1; }
+  .s_review .owl-nav .owl-prev {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: url(../img/arrow-left.png) !important; }
+  .s_review .owl-nav .owl-next {
+    position: absolute;
+    top: 0;
+    right: 0%;
+    -webkit-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    background-image: url(../img/arrow-left.png) !important; }
+  .s_review .owl-dots {
+    width: 100%;
+    margin-top: 20px;
+    text-align: center; }
+    .s_review .owl-dots .owl-dot {
+      width: 14px;
+      height: 14px;
+      margin: 0 4px;
+      background-color: #fff;
+      border-radius: 50%;
+      display: inline-block;
+      opacity: .5; }
+      .s_review .owl-dots .owl-dot.active {
+        opacity: .8; }
+
+.s_back {
+  background-image: url(../img/red_bg.jpg);
+  background-position: top center;
+  text-align: center; }
+  .s_back h3 {
+    margin-top: 0;
+    text-transform: uppercase;
+    font-weight: normal;
+    font-size: 26px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 10px 0; }
+  .s_back .button {
+    color: #000; }
+
+.s_contacts {
+  width: 100%;
+  text-align: center; }
+  .s_contacts .wrapper {
+    margin-top: 20px;
+    font-size: 18px; }
+  .s_contacts .contacts_top {
+    text-align: center; }
+  .s_contacts h2 {
+    color: #000;
+    display: inline-block;
+    vertical-align: middle;
+    margin-bottom: 0;
+    height: 45px;
+    line-height: 45px; }
+  .s_contacts .tabs {
+    display: inline-block;
+    vertical-align: middle;
+    height: 45px;
+    line-height: 45px;
+    margin-left: 25px; }
+    .s_contacts .tabs .tab {
+      float: left;
+      color: #9b1818;
+      border: #9b1818 5px solid;
+      padding: 0 60px;
+      line-height: 38px; }
+      .s_contacts .tabs .tab:first-child {
+        border: 0px 1px 1px 0px; }
+      .s_contacts .tabs .tab:last-child {
+        border: 0px 1px 1px 0px; }
+      .s_contacts .tabs .tab.active {
+        background-color: #9b1818;
+        color: white; }
+
+.map {
+  margin-top: 20px;
+  min-height: 500px;
+  background-color: #e1b6b0; }
+
+footer h2 {
+  margin-bottom: 30px; }
+
+footer p {
+  font-size: 18px;
+  text-align: center;
+  margin-top: 0; }
+
+footer .button-wrap {
+  text-align: center;
+  margin-top: 30px; }
+
+.bottom-phone {
+  text-align: center;
+  color: #9b1818;
+  margin-top: 50px; }
+
+#hidden-forms {
+  background-color: white;
+  position: relative;
+  max-width: 420px;
+  margin: auto; }
+  #hidden-forms h2 {
+    text-align: center; }
